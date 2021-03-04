@@ -10,14 +10,13 @@ function Carro(velocidadeMaxima = 200, delta = 5) {
             velocidadeAtual = velocidadeMaxima
         }
     }
+    // metodo publico
+    this.getVelocidadeAtual = function () {
+        return velocidadeAtual
+    }
 }
 
-// metodo publico
-this.getVelocidadeAtual = function () {
-    return velocidadeAtual
-}
-
-const uno = new Carro
+const uno = new Carro()
 uno.acelerar()
 console.log(uno.getVelocidadeAtual())
 
